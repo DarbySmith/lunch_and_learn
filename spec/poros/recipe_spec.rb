@@ -9,7 +9,7 @@ RSpec.describe Recipe do
         url: "www.source_recipe.com"
       }
 
-      country = "Japan"
+      country = "japan"
 
       recipe = Recipe.new(country, attributes)
 

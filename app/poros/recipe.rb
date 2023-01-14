@@ -4,7 +4,7 @@ class Recipe
   def initialize(country, attributes)
     @title = attributes[:label]
     @url = attributes[:url]
-    @country = country
+    @country = country.capitalize
     @image = attributes[:image]
   end
 end
