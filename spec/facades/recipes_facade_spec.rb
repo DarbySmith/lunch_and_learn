@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe RecipesFacade do
+RSpec.describe RecipesFacade, :vcr do
   describe 'class methods' do
     describe '#country_recipes' do
       it 'creates array of recipes for that country' do

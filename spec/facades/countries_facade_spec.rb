@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe CountriesFacade do
+RSpec.describe CountriesFacade, :vcr do
   describe 'class methods' do
     describe '#random_country' do
       it 'creates a country object from a randomly selected country' do

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe CountriesService do
+RSpec.describe CountriesService, :vcr do
   describe 'class methods' do
     describe 'all_countries' do
       it 'returns all countries' do
