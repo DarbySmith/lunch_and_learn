@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe YoutubeService do
+RSpec.describe YoutubeService, :vcr do
   describe 'class methods' do
     describe '#find_video' do
       it 'returns video for that country' do

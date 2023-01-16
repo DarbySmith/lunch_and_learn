@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe RecipesService do
+RSpec.describe RecipesService, :vcr do
   describe 'class methods' do
     describe '#country_recipes' do
       it 'returns recipes for a given country' do

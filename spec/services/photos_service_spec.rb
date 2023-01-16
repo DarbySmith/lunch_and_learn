@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe PhotosService do
+RSpec.describe PhotosService, :vcr do
   describe 'class methods' do
     describe '#find_photos' do
       it 'finds 10 photos for the given country' do

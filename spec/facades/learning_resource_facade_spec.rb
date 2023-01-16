@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe LearningResourceFacade do
+RSpec.describe LearningResourceFacade, :vcr do
   describe 'class methods' do
     describe '#country_resource' do
       it 'returns information for the country' do

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'get learning resource' do
+RSpec.describe 'get learning resource', :vcr do
   describe 'for a country' do
     it 'return photos and video information' do
       get '/api/v1/learning_resources?country=Peru'
