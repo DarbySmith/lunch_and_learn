@@ -5,6 +5,8 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates :api_key, uniqueness: true
 
+  has_many :favorites
+
 private
   def generate_api_key
     begin
