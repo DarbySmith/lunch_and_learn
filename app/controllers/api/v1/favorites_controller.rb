@@ -9,4 +9,14 @@ class Api::V1::FavoritesController < ApplicationController
       render json: { "error": "Unable to save favorite" }, status: 400
     end
   end
+
+  def index
+    user = User.find_by(api_key: params[:api_key])
+    if user 
+      favorites = user.favorites
+      render json: FavoriteSerializer.new(favorites)
+    else
+      render json: { "error": "User not found" }, status: 400
+    end
+  end
 end
