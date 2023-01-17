@@ -16,16 +16,16 @@
 - [Contributors](#contributors)
 
 ## Summary
-This is the backend service for an application called Lunch and Learn (frontend is not built). Lunch and Learn enables users to find recipes around the world and learn about different countries culture. When a user creates an account, they are able to save recipes to their account for later access.
+This is the backend service for an application called Lunch and Learn (frontend is not built). Lunch and Learn enables users to find recipes around the world and learn about different countries. When a user creates an account, they are able to save recipes to their account for later access. This project was completed as part of the backend curriculum at [Turing School of Software and Design](https://backend.turing.edu/). The project requirements can be found [HERE](https://backend.turing.edu/module3/projects/lunch_and_learn/).
 
 ## Setup 
-- (Optional) Fork repository
-- Clone repo by selecting 'Code' on the home page and copying the link. Use command `git clone <link>` on your local machine
-- Open repository in your IDE of choice
-- Set up gems: `bundle install`
-- Setup the database: `rails db:{drop,create,migrate,seed}`
-- Run the test suite: `bundle exec rspec`
-- Accress the local development enviroment: `rails server` and navigate to `http://localhost:3000`
+1. (Optional) Fork repository
+2. Clone repo by selecting 'Code' on the home page and copying the link. Use command `git clone <link>` on your local machine
+3. Open repository in your IDE of choice
+4. Set up gems: `bundle install`
+5. Setup the database: `rails db:{drop,create,migrate,seed}`
+6. Run the test suite: `bundle exec rspec`
+7. Accress the local development enviroment: `rails server` and navigate to `http://localhost:3000`
 
 ## Built With
 - Ruby 2.7.4
@@ -297,4 +297,4 @@ There is a one-to-many relationship between Users and Favorites.
 <img width="602" alt="Schema" src="https://user-images.githubusercontent.com/60988144/213017114-326e1441-486d-4941-88c1-9c72199f594c.png">
 
 ## Contributors
-[Darby Smith](https://github.com/DarbySmith)
+[Darby Smith](https://github.com/DarbySmith) - [LinkedIn](https://www.linkedin.com/in/darby-m-smith/)
