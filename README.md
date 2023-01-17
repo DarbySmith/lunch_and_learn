@@ -24,8 +24,20 @@ This is the backend service for an application called Lunch and Learn (frontend 
 3. Open repository in your IDE of choice
 4. Set up gems: `bundle install`
 5. Setup the database: `rails db:{drop,create,migrate,seed}`
-6. Run the test suite: `bundle exec rspec`
-7. Accress the local development enviroment: `rails server` and navigate to `http://localhost:3000`
+6. Setup Environment variables: `bundle exec figaro install`
+7. The following API's require keys for use: 
+    * [Edamam](https://developer.edamam.com/)
+    * [YouTube](https://developers.google.com/youtube/v3)
+    * [Unsplash](https://unsplash.com/documentation#creating-a-developer-account)
+8. Add the following environment variables to `config/application.yml`
+    ```yml
+    recipes_app_id: <key>
+    recipes_app_key: <key>
+    youtube_api_key: <key>
+    unsplash_api_key: <key>
+    ```
+9. Run the test suite: `bundle exec rspec`
+10. Accress the local development enviroment: `rails server` and navigate to `http://localhost:3000`
 
 ## Built With
 - Ruby 2.7.4
