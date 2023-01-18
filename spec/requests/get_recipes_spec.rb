@@ -34,7 +34,8 @@ RSpec.describe 'get recipes for a country', :vcr do
       
       recipe_body = File.read("spec/fixtures/recipes_japan_response.json")
       
-      stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=bca3f4c0&app_key=19d45876bfbcc0439f8e27b6b66a263a&q=Grenada&type=public")
+      stub_request(:get, "https://api.edamam.com/api/recipes/v2?q=Grenada&type=public")
+        .with(query: {'app_id' => ENV['recipes_app_id'], 'app_key' => ENV['recipes_app_key']})  
         .to_return(status: 200, body: recipe_body, headers: {})
       
       get '/api/v1/recipes'
